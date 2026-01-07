@@ -32,7 +32,7 @@ export default function ProblemStories() {
   }
 
   return (
-    <section className="bg-[#0b0f2a] py-28 text-white">
+    <section className="bg-[#0b0f2a] max-h-screen py-20 text-white">
       <div className="max-w-7xl mx-auto px-6">
 
         <h2 className="text-3xl md:text-4xl font-semibold mb-12 max-w-xl">
