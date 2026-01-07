@@ -1,3 +1,10 @@
-export default function LandingPage() {
-  return <h1 className="text-white">Hello from landing page</h1>
+
+import HeroVideo from "@/components/sections/Hero";
+
+export default function Home() {
+  return (
+   <div>
+   <HeroVideo/>
+   </div>
+  );
 }
