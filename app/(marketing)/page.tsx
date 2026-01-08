@@ -1,4 +1,5 @@
 
+import BlurMomentsCollage from "@/components/sections/BlurMomentsCollage";
 import Hero from "@/components/sections/Hero";
 import MomentsCollage from "@/components/sections/MomentsCollage";
 import ProblemStories from "@/components/sections/ProblemStories";
@@ -9,6 +10,7 @@ export default function Home() {
    <Hero/>
    <ProblemStories/>
    <MomentsCollage/>
+   <BlurMomentsCollage />
    </div>
   );
 }
