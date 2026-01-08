@@ -61,7 +61,7 @@ export default function ProblemStories() {
           </div>
 
           {/* PREVIEW */}
-          <div className="relative h-[18rem] rounded-xl overflow-hidden opacity-80 scale-95">
+          <div className="relative h-[22rem] rounded-2xl overflow-hidden opacity-80 scale-95">
             <Image
               src={stories[(index + 1) % stories.length].image}
               alt="next"
@@ -93,5 +93,7 @@ export default function ProblemStories() {
         </div>
       </div>
     </section>
+  
+
   )
 }

@@ -5,7 +5,7 @@ import ProblemStories from "@/components/sections/ProblemStories";
 
 export default function Home() {
   return (
-   <div>
+   <div className="bg-[#0b0f2a]">
    <Hero/>
    <ProblemStories/>
    <MomentsCollage/>
