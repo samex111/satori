@@ -33,7 +33,7 @@ export default function MomentsCollage() {
           transition-transform duration-500 hover:scale-105`}
       >
         <div className="bg-white p-1 rounded-sm shadow-xl">
-          <div className="relative w-42 h-28 md:w-48 md:h-36  overflow-hidden">
+          <div className="relative w-42 h-32 md:w-48 md:h-36  overflow-hidden">
             <Image src={p.src} alt="moment" fill className="object-cover" />
           </div>
         </div>

@@ -1,13 +1,15 @@
 import Image from "next/image"
 const photos = [
-  { src: "/moment1.jpg", rotate: "-rotate-6", x: "-translate-x-32", y: "-translate-y-6" },
-  { src: "/moment2.jpg", rotate: "rotate-3",  x: "-translate-x-12", y: "-translate-y-24" },
-  { src: "/moment3.jpg", rotate: "rotate-6",  x: "translate-x-8",   y: "-translate-y-10" },
-  { src: "/moment4.jpg", rotate: "-rotate-2", x: "translate-x-24",  y: "translate-y-10" },
-  { src: "/moment5.jpg", rotate: "rotate-24",  x: "translate-x-40",  y: "-translate-y-20" },
-  { src: "/moment6.jpg", rotate: "-rotate-3", x: "-translate-x-16", y: "translate-y-24" },
-  { src: "/moment7.jpg", rotate: "rotate-3",  x: "translate-x-10",  y: "translate-y-28" },
-  { src: "/moment8.jpg", rotate: "-rotate-1", x: "translate-x-32",  y: "translate-y-36" },
+  { src: "/moment8.jpg", rotate: "rotate-10", x: "translate-x-50",  y: "translate-y-10" },
+  { src: "/moment9.jpg", rotate: "rotate-10", x: "translate-x-18", y: "translate-y-22" },
+  { src: "/moment6.jpg", rotate: "rotate-6", x: "-translate-x-39", y: "-translate-y-0" },
+  { src: "/moment1.jpg", rotate: "-rotate-16", x: "translate-x-15", y: "-translate-y-30" },
+  { src: "/moment3.jpg", rotate: "-rotate-18",  x: "-translate-x-17",   y: "-translate-y-22" },
+  { src: "/moment7.jpg", rotate: "-rotate-11",  x: "-translate-x-24",  y: "translate-y-24" },
+  { src: "/moment5.jpg", rotate: "-rotate-8",  x: "translate-x-48",  y: "-translate-y-21" },
+  { src: "/moment4.jpg", rotate: "rotate-10", x: "translate-x-30",  y: "-translate-y-5" },
+  { src: "/moment2.jpg", rotate: "rotate-3",  x: "-translate-x-0", y: "-translate-y-0" },
+
 ]
 export default function BlurMomentsCollage(){
 
