@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 
@@ -10,21 +10,50 @@ const stories = [
   { image: "/1fbfc8549ee445b4571273a80f06a5c80038a299.jpg", text: "We didn’t see it coming." },
 ]
 
+const slides = [
+  stories[stories.length - 1],
+  ...stories,
+  stories[0],
+]
+
 export default function ProblemStories() {
-  const [index, setIndex] = useState(0)
+  const [index, setIndex] = useState(1)
+  const [transition, setTransition] = useState(true)
   const timer = useRef<NodeJS.Timeout | null>(null)
 
-  const next = () => setIndex((i) => (i + 1) % stories.length)
-  const prev = () => setIndex((i) => (i - 1 + stories.length) % stories.length)
+  const next = () => setIndex(i => i + 1)
+  const prev = () => setIndex(i => i - 1)
 
   useEffect(() => {
     startAuto()
     return stopAuto
   }, [])
 
+  useEffect(() => {
+    if (index === slides.length - 1) {
+      setTimeout(() => {
+        setTransition(false)
+        setIndex(1)
+      }, 700)
+    }
+
+    if (index === 0) {
+      setTimeout(() => {
+        setTransition(false)
+        setIndex(slides.length - 2)
+      }, 700)
+    }
+  }, [index])
+
+  useEffect(() => {
+    if (!transition) {
+      requestAnimationFrame(() => setTransition(true))
+    }
+  }, [transition])
+
   const startAuto = () => {
     stopAuto()
-    timer.current = setInterval(next, 2000)
+    timer.current = setInterval(next, 3500)
   }
 
   const stopAuto = () => {
@@ -32,68 +61,39 @@ export default function ProblemStories() {
   }
 
   return (
-    <section className="bg-[#0b0f2a] max-h-screen py-20 text-white">
+    <section className="bg-[#0b0f2a] py-24 text-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
 
-        <h2 className="text-3xl md:text-4xl font-semibold mb-12 max-w-xl">
+        <h2 className="text-3xl md:text-4xl font-semibold mb-14 max-w-xl">
           Asthma feels unpredictable even when you do everything right.
         </h2>
 
-        <div
-          onMouseEnter={stopAuto}
-          onMouseLeave={startAuto}
-          className="relative grid grid-cols-[70%_30%] gap-6 items-end "
-        >
-
-          {/* MAIN IMAGE */}
-          <div className="relative h-[22rem] rounded-2xl overflow-hidden">
-            <Image
-              src={stories[index].image}
-              alt="story"
-              fill
-              priority
-              className="object-cover transition-all duration-200 ease-out"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent duration-500" />
-            <p className="absolute bottom-6 left-6 text-sm">
-              {stories[index].text}
-            </p>
-          </div>
-
-          {/* PREVIEW */}
-          <div className="relative h-[22rem] rounded-2xl overflow-hidden opacity-80 scale-95">
-            <Image
-              src={stories[(index + 1) % stories.length].image}
-              alt="next"
-              fill
-              className="object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-            <p className="absolute bottom-4 left-4 text-xs">
-              {stories[(index + 1) % stories.length].text}
-            </p>
-          </div>
-
-          {/* CONTROLS */}
-          <div className="absolute right-0 -bottom-14 flex gap-3">
-            <button
-              onClick={prev}
-              className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition"
+        <div onMouseEnter={stopAuto} onMouseLeave={startAuto} className="relative">
+          <div className="">
+            <div
+              className={`flex gap-6 ${transition ? "transition-transform duration-700 ease-out" : ""}`}
+              style={{ transform: `translateX(-${index * 70}%)` }}
             >
+              {slides.map((story, i) => (
+                <div key={i} className="relative w-[70%] h-[22rem] shrink-0 rounded-2xl overflow-hidden">
+                  <Image src={story.image} alt="story" fill className="object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                  <p className="absolute bottom-6 left-6 text-sm max-w-xs">{story.text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="absolute right-0 -bottom-14 flex gap-3 z-10">
+            <button onClick={prev} className="p-2 rounded-full bg-white/10 hover:bg-white/20">
               <ChevronLeft size={18} />
             </button>
-            <button
-              onClick={next}
-              className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition"
-            >
+            <button onClick={next} className="p-2 rounded-full bg-white/10 hover:bg-white/20">
               <ChevronRight size={18} />
             </button>
           </div>
-
         </div>
       </div>
     </section>
-  
-
   )
 }
