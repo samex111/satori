@@ -25,7 +25,7 @@ return<section className="relative h-[80vh] w-full py-6 text-white flex items-ce
   </h3>
 
   {/* IMAGE LAYER (BACKGROUND) */}
-  <div className="absolute inset-0 flex justify-center items-center blur-sm opacity-20">
+  <div className="absolute inset-0 flex justify-center items-center blur-sm opacity-20 overflow-hidden">
     <div className="relative w-full h-[28rem] flex justify-center items-center">
 
       {photos.map((p, i) => (

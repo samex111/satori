@@ -22,9 +22,11 @@ export default function MomsLove(){
   <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-[#070b2a]" />
 
   {/* CONTENT */}
-  <div className="relative z-10 max-w-7xl mx-auto px-6 pt-36 text-white">
-    <h1 className="text-4xl md:text-6xl font-bold max-w-2xl">
-      The Air Carries Hidden Risks And They Shape Your Child’s Asthma.
+  <div className="relative w-full flex justify-end text-end z-10 mx-auto px-6 pt-36 text-white">
+    <h1 className="text-4xl md:text-5xl font-bold max-w-2xl">
+      The Air Carries Hidden <br /> 
+      Risks And They Shape Your <br />
+       Child’s Asthma.
     </h1>
   </div>
 
