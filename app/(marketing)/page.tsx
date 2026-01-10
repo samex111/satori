@@ -7,6 +7,7 @@ import MeetSatori from "@/components/sections/MeetSatori";
 import MomentsCollage from "@/components/sections/MomentsCollage";
 import MomsLove from "@/components/sections/MomLove";
 import ProblemStories from "@/components/sections/ProblemStories";
+import ProtactiveSystem from "@/components/sections/ProtactiveSystem";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
    <Enviroment/>
    <GlobarWarming/>
    <MeetSatori/>
+   <ProtactiveSystem/>
    </div>
   );
 }
