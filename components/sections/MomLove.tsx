@@ -1,5 +1,5 @@
 export default function MomsLove(){
-    return <section className="relative py-8 h-screen md:h-[150vh] w-full overflow-hidden">
+    return <section className="relative py-8 md:h-[150vh] w-full overflow-hidden">
 
   {/* DESKTOP HERO */}
   <div
@@ -14,7 +14,7 @@ export default function MomsLove(){
 
   {/* MOBILE HERO */}
   <div
-    className="absolute inset-0 md:hidden bg-top bg-contain bg-no-repeat"
+    className="absolute  inset-0 md:hidden bg-top bg-contain bg-no-repeat"
     style={{ backgroundImage: "url(/momeslove.png)" }}
   />
 

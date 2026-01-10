@@ -3,15 +3,15 @@ export default function Hero() {
     <section className="relative h-screen overflow-hidden text-white">
 
       {/* Video */}
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="absolute inset-0 h-full w-full object-cover"
-      >
-        <source src="/childvideo.mp4" type="video/mp4" />
-      </video>
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 h-full w-full object-cover"
+        >
+          <source src="/childvideo.mp4" type="video/mp4" />
+        </video>
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/30" />
