@@ -5,7 +5,7 @@ import Navbar from "@/components/layout/Navbar";
 export default function MarketingLayout({ children }:{children:ReactNode}) {
   // #0B0C26
   return (
-    <><div className="bg-[#0B0C26]">
+    <><div className="bg-[#0b0f2a]">
       <header><Navbar /></header>
       <main>{children}</main>
       <footer><Footer /></footer>
