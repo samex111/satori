@@ -55,10 +55,10 @@ export default function WhatYouReceive() {
   }
 
   return (
-    <section className="bg-[#0b0f2a] py-24 text-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="bg-[#6366F1] mx-2 rounded-md py-24 text-white overflow-hidden">
+      <div className=" max-w-7xl  w-full mx-auto px-6">
 
-        <h2 className="text-3xl md:text-4xl font-semibold mb-12">
+        <h2 className="text-3xl flex justify-center mx-auto w-full  md:text-4xl font-semibold mb-12">
           What You Receive
         </h2>
 
@@ -72,7 +72,7 @@ export default function WhatYouReceive() {
               {slides.map((item, i) => (
                 <div key={i} className="w-[55%] shrink-0">
                   
-                  <div className="bg-white rounded-xl h-[420px] flex items-center justify-center  mb-8">
+                  <div className="bg-white rounded-xl h-[420px]  flex items-center justify-center  mb-8">
                     <PhoneMockup screen={item.image} />
                   </div>
 
