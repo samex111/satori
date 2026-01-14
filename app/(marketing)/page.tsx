@@ -3,6 +3,7 @@ import BlurMomentsCollage from "@/components/sections/BlurMomentsCollage";
 import Enviroment from "@/components/sections/Enviroment";
 import GlobarWarming from "@/components/sections/GlobalWarming";
 import Hero from "@/components/sections/Hero";
+import HowSatoriCompares from "@/components/sections/HowSatoriCompares";
 import HowSatoriWorks from "@/components/sections/HowSatoriWorks";
 import MeetSatori from "@/components/sections/MeetSatori";
 import MomentsCollage from "@/components/sections/MomentsCollage";
@@ -31,6 +32,7 @@ export default function Home() {
    <SatoriIntelligence/>
    <Validated/>
    <ParentsVoice/>
+   <HowSatoriCompares/>
    </div>
   );
 }
