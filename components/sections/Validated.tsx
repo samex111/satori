@@ -3,11 +3,11 @@
 import { useEffect, useRef, useState } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import Image from "next/image"
+import { Button } from "../ui/button"
 const stories = [
-    { video: "/video1.mp4",heading:'Air Pollution Shifts 40+ Times a Day.', text: "Air pollution can shift more than 40 times a day — which is why your child can be fine in the morning and wheezing by the afternoon, without anything ‘new’ happening." },
-    { video: "/video2.mp4",heading:'Ozone Levels Change 25+ Times a Day', text: "Ozone can rise and fall over 25 times a day — tightening airways even on days that look perfectly clear, which makes asthma harder to predict with your eyes alone." },
-    { video: "/video3.mp4",heading:'Nighttime Air Patterns Shift 15+ Times', text: "Nighttime air can shift more than 15 times — trapping pollution near the ground while your child sleeps and increasing the risk of sudden nighttime symptoms." },
-    { video: "/video4.mp4",heading:'Nighttime Air Patterns Shift 15+ Times', text: "Nighttime air can shift more than 15 times — trapping pollution near the ground while your child sleeps and increasing the risk of sudden nighttime symptoms." },
+    { image: "/vel-1.jpg",heading:'Reducing exposure reduces attacks.', text: "Avoiding high-risk air moments lowers symptoms and ER visits — this is proven pediatric science." , button:"Learn More"},
+    { image: "/vel-2.png",heading:'We monitor the triggers pediatric experts warn about — the exact conditions linked to symptoms, flare-ups, and ER spikes.', text: "" },
+    { image: "/vel-3.png",heading:'Our guidance follows pediatric asthma guidelines — simple, proven actions that protect sensitive airways.', text: "" },
 ]
 
 const slides = [
@@ -76,11 +76,12 @@ export default function GlobarWarming() {
                         >
                             {slides.map((story, i) => (
                                 <div key={i} className="relative  w-[90%] h-[80vh]  shrink-0 rounded-2xl overflow-hidden">
-                                <Image src={story.image} alt="story" fill className="absolute  md:left-0 inset-0 h-full w-full object-cover" />
+                                <Image src={story.image} alt="story" fill className="absolute   inset-0 h-full w-full object-cover" />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-                                    <div className="absolute bottom-6 left-6 text-sm max-w-xs">
-                                        <h1 className="text-3xl">{story.heading}</h1>
+                                    <div className="absolute bottom-6 left-6 text-sm max-w-3xl">
+                                        <h1 className="text-2xl">{story.heading}</h1>
                                         <p>{story.text}</p>
+                                        {story.button && (<Button variant={'ghost'} className="border mt-2 text-sm font-normal">{story.button}</Button>)}
                                     </div>
                                 </div>
                             ))}
