@@ -1,6 +1,8 @@
 
 import BlurMomentsCollage from "@/components/sections/BlurMomentsCollage";
 import Enviroment from "@/components/sections/Enviroment";
+import FAQSection from "@/components/sections/FAQSection";
+import FinalCTA from "@/components/sections/FinalCTA";
 import GlobarWarming from "@/components/sections/GlobalWarming";
 import Hero from "@/components/sections/Hero";
 import HowSatoriCompares from "@/components/sections/HowSatoriCompares";
@@ -33,6 +35,8 @@ export default function Home() {
    <Validated/>
    <ParentsVoice/>
    <HowSatoriCompares/>
+   <FAQSection/>
+   <FinalCTA/>
    </div>
   );
 }
