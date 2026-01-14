@@ -7,6 +7,7 @@ import HowSatoriWorks from "@/components/sections/HowSatoriWorks";
 import MeetSatori from "@/components/sections/MeetSatori";
 import MomentsCollage from "@/components/sections/MomentsCollage";
 import MomsLove from "@/components/sections/MomLove";
+import ParentsVoice from "@/components/sections/ParentsVoice";
 import ProblemStories from "@/components/sections/ProblemStories";
 import ProtactiveSystem from "@/components/sections/ProtactiveSystem";
 import SatoriIntelligence from "@/components/sections/SatoriIntelligence";
@@ -29,6 +30,7 @@ export default function Home() {
    <WhatYouRecieve/>
    <SatoriIntelligence/>
    <Validated/>
+   <ParentsVoice/>
    </div>
   );
 }
