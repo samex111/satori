@@ -9,6 +9,8 @@ import MomentsCollage from "@/components/sections/MomentsCollage";
 import MomsLove from "@/components/sections/MomLove";
 import ProblemStories from "@/components/sections/ProblemStories";
 import ProtactiveSystem from "@/components/sections/ProtactiveSystem";
+import SatoriIntelligence from "@/components/sections/SatoriIntelligence";
+import Validated from "@/components/sections/Validated";
 import WhatYouRecieve from "@/components/sections/WhatYouRecieve";
 
 export default function Home() {
@@ -25,6 +27,8 @@ export default function Home() {
    <ProtactiveSystem/>
    <HowSatoriWorks/>
    <WhatYouRecieve/>
+   <SatoriIntelligence/>
+   <Validated/>
    </div>
   );
 }
