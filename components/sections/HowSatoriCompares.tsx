@@ -60,7 +60,7 @@ export default function HowSatoriCompares() {
 
         {/* CTA */}
         <div className="relative mt-20 bg-[#6b6df5] rounded-xl px-8 py-8 flex flex-col md:flex-row items-center justify-between text-white">
-          <div className="absolute top-[-8px] right-24 w-4 h-4 bg-[#6b6df5] rotate-45" />
+          <div className="absolute -top-2 right-24 w-4 h-4 bg-[#6b6df5] rotate-45" />
 
           <div>
             <p className="font-semibold text-lg">
