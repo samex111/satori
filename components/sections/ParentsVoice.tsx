@@ -4,7 +4,7 @@ const slide = [
     {text:'Every night I check if her chest is rising.can’t fall asleep until I’m sure.' , from:'-Mother,UK'}
 ]
 export default function  ParentsVoice(){
-    return <section className=" w-full md:py-20 text-white">
+    return <section className=" w-full py-4 md:py-20 text-white">
         <h2 className="text-3xl mb-14 font-bold ml-4 ">
             Inspired by the Voices <br />
             of Parents Everywhere.

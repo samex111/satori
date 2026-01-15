@@ -61,7 +61,7 @@ export default function GlobarWarming() {
     }
 
     return (
-        <section className="bg-[#0b0f2a] md:py-22 h-screen text-white overflow-hidden">
+        <section className="bg-[#0b0f2a]  h-screen  md:h-[120vh]  text-white overflow-hidden">
             <div className="max-w-7xl mx-auto px-6">
 
                 <h2 className="text-3xl md:text-4xl ml-4 font-semibold mb-14 max-w-xl">
@@ -76,7 +76,7 @@ export default function GlobarWarming() {
                             style={{ transform: `translateX(-${index * 90}%)` }}
                         >
                             {slides.map((story, i) => (
-                                <div key={i} className="relative h-[70vh] w-[90%] md:h-[80vh]  shrink-0 rounded-2xl overflow-hidden">
+                                <div key={i} className="relative h-[70vh] w-[90%] md:h-[90vh]  shrink-0 rounded-2xl overflow-hidden">
                                 <Image src={story.image} alt="story" fill className="absolute   inset-0 h-full w-full object-cover" />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                                     <div className="absolute bottom-6 left-6 text-sm max-w-3xl">
@@ -89,7 +89,7 @@ export default function GlobarWarming() {
                         </div>
                     </div>
 
-                    <div className="absolute right-0 -bottom-14 flex gap-3 z-10">
+                    <div className="absolute right-0 pb-2 -bottom-14 flex gap-3 z-10">
                         <button onClick={prev} className="p-2 rounded-full bg-white/10 hover:bg-white/20">
                             <ChevronLeft size={18} />
                         </button>

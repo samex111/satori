@@ -64,7 +64,7 @@ export default function GlobarWarming() {
         <section className="bg-[#0b0f2a] md:py-22  text-white overflow-hidden">
             <div className="max-w-7xl mx-auto px-6">
 
-                <h2 className="text-3xl md:text-4xl font-semibold mb-14 ml-2 max-w-2xl">
+                <h2 className="text-3xl md:text-4xl py- font-semibold mb-14 ml-2 max-w-2xl">
                   The air changes constantly and that’s why asthma feels unpredictable.
                 </h2>
 
@@ -75,7 +75,7 @@ export default function GlobarWarming() {
                             style={{ transform: `translateX(-${index * 90}%)` }}
                         >
                             {slides.map((story, i) => (
-                                <div key={i} className="relative w-[90%] h-[80vh] shrink-0 rounded-2xl overflow-hidden">
+                                <div key={i} className="relative w-[90%] h-[70vh] md:h-[80vh] shrink-0 rounded-2xl overflow-hidden">
                                     <video
                                         autoPlay
                                         muted

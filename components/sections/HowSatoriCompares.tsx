@@ -1,6 +1,6 @@
 export default function HowSatoriCompares() {
   return (
-    <section className="bg-[#070b2a] text-white py-24">
+    <section className="bg-[#070b2a] text-white  md:py-24">
       <div className="max-w-6xl mx-auto px-6">
 
         <h2 className="text-3xl md:text-4xl font-semibold text-center mb-16">
@@ -59,7 +59,7 @@ export default function HowSatoriCompares() {
         </div>
 
         {/* CTA */}
-        <div className="relative mt-20 bg-[#6b6df5] rounded-xl px-8 py-8 flex flex-col md:flex-row items-center justify-between text-white">
+        <div className="relative md:mt-20 mt-3 bg-[#6b6df5] rounded-xl px-8 py-8 flex flex-col md:flex-row items-center justify-between text-white">
           <div className="absolute -top-2 right-24 w-4 h-4 bg-[#6b6df5] rotate-45" />
 
           <div>
