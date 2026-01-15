@@ -63,7 +63,7 @@ export default function Enviroment() {
   }
 
   return (
-    <section className="py-2 h-[90vh]  w-full text-white overflow-hidden">
+    <section className="md:py-2 h-[100vh]   w-full text-white overflow-hidden">
         
       <div className="max-w-7xl mx-auto px-6">
 

@@ -61,7 +61,7 @@ export default function GlobarWarming() {
     }
 
     return (
-        <section className="bg-[#0b0f2a]  h-screen  md:h-[120vh]  text-white overflow-hidden">
+        <section className="bg-[#0b0f2a]  h-[110vh]  md:h-[120vh]  text-white overflow-hidden">
             <div className="max-w-7xl mx-auto px-6">
 
                 <h2 className="text-3xl md:text-4xl ml-4 font-semibold mb-14 max-w-xl">
@@ -89,7 +89,7 @@ export default function GlobarWarming() {
                         </div>
                     </div>
 
-                    <div className="absolute right-0 pb-2 -bottom-14 flex gap-3 z-10">
+                    <div className="absolute right-0  -bottom-10 flex gap-3 z-10">
                         <button onClick={prev} className="p-2 rounded-full bg-white/10 hover:bg-white/20">
                             <ChevronLeft size={18} />
                         </button>

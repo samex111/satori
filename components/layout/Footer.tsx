@@ -15,7 +15,7 @@ export default function Footer() {
         {/* LEFT – LINKS */}
         <div>
 
-          <div className="grid grid-cols-3 gap-12 text-sm text-white/70">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-12 text-sm text-white/70">
             <div>
               <h4 className="font-medium text-white mb-3">Quick Links</h4>
               <ul className="space-y-2">
