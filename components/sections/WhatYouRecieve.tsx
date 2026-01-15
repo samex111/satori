@@ -97,7 +97,7 @@ export default function WhatYouReceive() {
                   <div className="bg-white rounded-2xl h-[350px] md:h-[500px] relative mb-6 overflow-hidden shadow-xl flex items-end justify-center">
 
                  <div className="relative w-full flex justify-center items-end translate-y-12 md:translate-y-16">
-                    <PhoneMockup screen={item.image} className="drop-shadow-2xl" />
+                    <PhoneMockup screen={item.image} className="drop-shadow-2xl absolute top-10" />
                   </div>
                   </div>
 

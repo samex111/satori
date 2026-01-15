@@ -72,10 +72,10 @@ export default function ProblemStories() {
           <div className="">
             <div
               className={`flex gap-6 ${transition ? "transition-transform duration-700 ease-out" : ""}`}
-              style={{ transform: `translateX(-${index * 70}%)` }}
+              style={{ transform: `translateX(-${index * 80}%)` }}
             >
               {slides.map((story, i) => (
-                <div key={i} className="relative w-[70%] h-[22rem] shrink-0 rounded-2xl overflow-hidden">
+                <div key={i} className="relative w-[80%] h-[22rem] shrink-0 rounded-2xl overflow-hidden">
                   <Image src={story.image} alt="story" fill className="object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                   <p className="absolute bottom-6 left-6 text-sm max-w-xs">{story.text}</p>

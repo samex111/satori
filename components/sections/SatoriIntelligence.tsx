@@ -72,7 +72,7 @@ export default function SatoriIntelligence() {
                         {slides.map((story, i) => (
                             <div key={i} className="w-[90%]  md:w-[49%] shrink-0 flex flex-col">
                                 {/* IMAGE BOX */}
-                                <div className="relative aspect-[1.0/1] rounded-3xl overflow-hidden mb-8">
+                                <div className="relative aspect-[1] md:aspect-[1.5/1] rounded-3xl overflow-hidden mb-8">
                                     <Image
                                         src={story.image}
                                         alt={story.heading}

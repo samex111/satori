@@ -64,8 +64,8 @@ export default function GlobarWarming() {
         <section className="bg-[#0b0f2a] md:py-22  text-white overflow-hidden">
             <div className="max-w-7xl mx-auto px-6">
 
-                <h2 className="text-3xl md:text-4xl font-semibold mb-14 max-w-xl">
-                    Asthma feels unpredictable even when you do everything right.
+                <h2 className="text-3xl md:text-4xl font-semibold mb-14 ml-2 max-w-2xl">
+                  The air changes constantly and that’s why asthma feels unpredictable.
                 </h2>
 
                 <div onMouseEnter={stopAuto} onMouseLeave={startAuto} className="relative">

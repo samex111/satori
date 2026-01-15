@@ -13,7 +13,7 @@ const photos = [
 ]
 export default function BlurMomentsCollage(){
 
-return<section className="relative h-[80vh] w-full py-6 text-white flex items-center justify-center text-center">
+return<section className="relative h-[80vh] w-full md:py-6 text-white flex items-center justify-center text-center">
 
   {/* TEXT LAYER (TOP) */}
   <h3 className="relative z-10 text-3xl font-bold max-w-3xl px-6">

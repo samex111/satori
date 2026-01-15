@@ -15,7 +15,7 @@ const photos = [
 
 export default function MomentsCollage() {
   return (
-    <section className="min-h-screen w-full py-8 text-white text-center">
+    <section className="h-[80vh] md:min-h-screen w-full md:py-8 text-white text-center">
 
   {/* HEADING FIRST */}
   <h2 className="text-3xl md:text-4xl font-semibold max-w-2xl mx-auto mb-12 px-6">
