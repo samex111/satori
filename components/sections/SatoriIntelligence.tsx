@@ -23,6 +23,19 @@ export default function SatoriIntelligence() {
     const [index, setIndex] = useState(2); // Start at the first actual slide
     const [transition, setTransition] = useState(true);
     const timer = useRef<NodeJS.Timeout | null>(null);
+      const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const check = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    check();
+    window.addEventListener("resize", check);
+
+    return () => window.removeEventListener("resize", check);
+  }, []);
+    
 
     const next = () => setIndex(i => i + 1);
     const prev = () => setIndex(i => i - 1);
@@ -63,7 +76,7 @@ export default function SatoriIntelligence() {
                     <div
                         className={`flex gap-4  md:gap-8 ${transition ? "transition-transform duration-700 cubic-bezier(0.4, 0, 0.2, 1)" : ""}`}
                         style={{
-                            transform: window.innerWidth < 768
+                            transform: isMobile
                                 ? `translateX(-${index * 95}%)`
                                 : `translateX(-${index * 51.5}%)`
                         }}
