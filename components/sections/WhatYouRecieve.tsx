@@ -6,9 +6,9 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 import { PhoneMockup } from "./ProtactiveSystem"
 
 const items = [
-  { image: "/message-1.png", heading: "Daily Predictive Forecasts", text: "Each morning, Satori gives you a clear picture of how your child’s day is shaping up — so you can plan with confidence instead of guessing." },
-  { image: "/message-2.png", heading: "Early Risk Alerts", text: "Satori warns you before symptoms begin by identifying the specific time windows when environmental changes are most likely to affect your child." },
-  { image: "/message-3.png", heading: "Clear Answers About What’s Happening", text: "When you have questions, Satori looks at the current air and conditions through your child’s profile and helps explain what’s happening." },
+  { image: "/Message-1.png", heading: "Daily Predictive Forecasts", text: "Each morning, Satori gives you a clear picture of how your child’s day is shaping up — so you can plan with confidence instead of guessing." },
+  { image: "/Message-2.png", heading: "Early Risk Alerts", text: "Satori warns you before symptoms begin by identifying the specific time windows when environmental changes are most likely to affect your child." },
+  { image: "/Message-3.png", heading: "Clear Answers About What’s Happening", text: "When you have questions, Satori looks at the current air and conditions through your child’s profile and helps explain what’s happening." },
 ]
 
 // Loopable slides
