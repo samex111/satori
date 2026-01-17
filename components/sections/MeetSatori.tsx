@@ -2,7 +2,7 @@ import Image from "next/image"
 export default function MeetSatori() {
     return <section className="h-[80vh] text-white flex justify-center items-center flex-col">
           <Meet/>
-        <Image src={'/Satorilogo.png'} alt="Satori" width={'553'} height={'155'} className="text-5xl font-extrabold md:text-7xl mb-3">
+        <Image src={'/satori.png'} alt="Satori" width={'553'} height={'155'} className="text-5xl font-extrabold md:text-7xl mb-3">
         </Image>
         <p className="text-center mx-2 "> From the Japanese <i>satori—</i> sudden understanding of underlying truth.</p>
       
